@@ -2,21 +2,13 @@
 Joseph Oudemolen
 1/19/2021
 CIS 227.6800
-
-This is a test
-test part 19
-
+test
 */
 #include <iostream>
-#include <math.h>
+#include "Assignment1.h"
 
 using namespace std;
-
-
-//define functions
-double hypotenuseOfTriangle(double,double);
-double areaOfTrapezoid(double,double,double);
-double volumeOfRectangle(double,double,double);
+Assignment1Class Assignment1;
 
 int main(){
     int userSelection = 5;
@@ -40,7 +32,7 @@ int main(){
             cin >> side1;
             cout << "Please input second side of triangle: ";
             cin >> side2;
-            double triangleOutput = hypotenuseOfTriangle(side1, side2);
+            double triangleOutput =  Assignment1.hypotenuseOfTriangle(side1, side2);
             cout << "The Hypotenuse of the triangle is " << triangleOutput << endl;
         }
 
@@ -52,7 +44,7 @@ int main(){
             cin >> side2;
             cout << "Please input the height of the trapezoid: ";
             cin >> height;
-            double trapezoidOutput = areaOfTrapezoid(side1, side2, height);
+            double trapezoidOutput =  Assignment1.areaOfTrapezoid(side1, side2, height);
             cout << "The Area of the trapezoid is " << trapezoidOutput << endl;
         }
 
@@ -64,7 +56,7 @@ int main(){
             cin >> width;
             cout << "Please input the height of the rectangle: ";
             cin >> height;
-            double rectangleOutput = volumeOfRectangle(lenght, width, height);
+            double rectangleOutput =  Assignment1.volumeOfRectangle(lenght, width, height);
             cout << "The volume of the rectangle is " << rectangleOutput << endl;
         }
 
@@ -79,20 +71,4 @@ int main(){
         }
     
     }while (userSelection != 9);  //end of do while loop
-}
-
-//calculates the hypotenus of a triangle
-double hypotenuseOfTriangle(double side1, double side2){
-    double preSquareRoot = pow(side1, 2) + pow(side2, 2);
-    return pow(preSquareRoot, 0.5); //uses 0.5 exponent to square root
-}
-
-//calculates the area of trapezoid
-double areaOfTrapezoid(double side1, double side2, double height){
-    return (side1 + side2)*height/2;
-}
-
-//calculates the volume of rectangle
-double volumeOfRectangle(double lenght, double width, double height){
-    return lenght * width * height;
 }
