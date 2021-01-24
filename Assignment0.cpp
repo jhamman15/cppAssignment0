@@ -2,7 +2,6 @@
 Joseph Oudemolen
 1/19/2021
 CIS 227.6800
-test
 */
 #include <iostream>
 #include "Assignment1.h"
