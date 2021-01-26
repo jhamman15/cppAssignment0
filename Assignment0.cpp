@@ -14,7 +14,7 @@ int main(){
 
     //runs while user selection is not 9
     do{
-        double side1,side2,lenght,width,height; //variables for all of the math problems
+        double side1,side2,length,width,height; //variables for all of the math problems
 
         //main menu
         cout << "Select a problem" << endl;
@@ -50,12 +50,12 @@ int main(){
         //user input for volume of recangle 
         else if(userSelection == 3){
             cout << "Please input the length of the rectangle: ";
-            cin >> lenght;
+            cin >> length;
             cout << "Please input the width of the rectangle: ";
             cin >> width;
             cout << "Please input the height of the rectangle: ";
             cin >> height;
-            double rectangleOutput =  Assignment1.volumeOfRectangle(lenght, width, height);
+            double rectangleOutput =  Assignment1.volumeOfRectangle(length, width, height);
             cout << "The volume of the rectangle is " << rectangleOutput << endl;
         }
 
