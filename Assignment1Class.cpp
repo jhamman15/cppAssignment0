@@ -14,6 +14,6 @@ double Assignment1Class::areaOfTrapezoid(double side1, double side2, double heig
 }
 
 //calculates the volume of rectangle
-double Assignment1Class::volumeOfRectangle(double lenght, double width, double height){
-    return lenght * width * height;
+double Assignment1Class::volumeOfRectangle(double length, double width, double height){
+    return length * width * height;
 }
